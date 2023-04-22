@@ -2,9 +2,15 @@ header {
     width: 90vw;
     height: 10vh;
     border-radius: 1vh;
-    background: linear-gradient(#e66465, #9198e5);
+    background-image: url(/img/card2.jpg);
+        background-size: cover;
     margin: auto;
     margin-top: 3%;
+    display: flex;
+    color: white;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -12,7 +18,8 @@ header {
     width: 90vw;
     height: 40vh;
     border-radius: 1vh;
-    background: linear-gradient(#e66465, #9198e5);
+    background-image: url(/img/card1.jpg);
+    background-size: cover;
     margin: auto;
     margin-top: 3%;
 }
@@ -21,7 +28,8 @@ header {
     width: 90vw;
     height: 25vh;
     border-radius: 1vh;
-    background: linear-gradient(#e66465, #9198e5);
+    background-image: url(/img/card2.jpg);
+        background-size: cover;
     margin: auto;
     margin-top: 3%;
     display: flex;
@@ -31,35 +39,53 @@ header {
     width: 90vw;
     height: 25vh;
     border-radius: 1vh;
-    background: linear-gradient(#f8d847, #9198e5);
+    background: linear-gradient(#eef3e5, #a1ce86);
     margin: auto;
     margin-top: 3%;
     display: flex;
 }
+.Card_Invitaciones {
+    width: 90%;
+    height: 90%;
+    border-radius: 1vh;
+    margin: auto;
+    margin-top: 30px;
+}
 
+.Card_Invitaciones > ul{
+color: white;
+background-color: #473f3fc5;
+box-shadow: 10px;    
+border-radius: 2vh;
+}
+.Card_Invitaciones > ul li {
+padding: 10px;
+}
 .Card_Nuevo_Evento {
     width: 50%;
     height: 90%;
     border-radius: 1vh;
-    background: linear-gradient(#136ab1, #51ad05);
-    margin: auto;
-        margin-top: 3%;
-        margin-bottom: 3%;
-}
-.Card_Editar_Evento {
-    width: 50%;
-    height: 90%;
-    border-radius: 1vh;
-    background: linear-gradient(#aa0b0b, #0313c7);
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
 }
+
+.Card_Editar_Evento {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vh;
+    background-image: url(/img/card3.jpg);
+        background-size: cover;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
 .Card_Amigos {
     width: 50%;
     height: 90%;
     border-radius: 1vh;
-    background: linear-gradient(#136ab1, #51ad05);
+    background: linear-gradient(#eef3e5, #a1ce86);
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -69,7 +95,7 @@ header {
     width: 50%;
     height: 90%;
     border-radius: 1vh;
-    background: linear-gradient(#aa0b0b, #0313c7);
+    background: linear-gradient(#eef3e5, #a1ce86);
     margin: auto;
     margin-top: 3%;
     margin-bottom: 3%;
