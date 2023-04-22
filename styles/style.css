@@ -1,0 +1,76 @@
+header {
+    width: 90vw;
+    height: 10vh;
+    border-radius: 1vh;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: auto;
+    margin-top: 3%;
+
+}
+
+.Container_Invitaciones {
+    width: 90vw;
+    height: 40vh;
+    border-radius: 1vh;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: auto;
+    margin-top: 3%;
+}
+
+.Container_Gestion_Evento {
+    width: 90vw;
+    height: 25vh;
+    border-radius: 1vh;
+    background: linear-gradient(#e66465, #9198e5);
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+}
+
+.Container_Administrar_Perfil {
+    width: 90vw;
+    height: 25vh;
+    border-radius: 1vh;
+    background: linear-gradient(#f8d847, #9198e5);
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+}
+
+.Card_Nuevo_Evento {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vh;
+    background: linear-gradient(#136ab1, #51ad05);
+    margin: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+}
+.Card_Editar_Evento {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vh;
+    background: linear-gradient(#aa0b0b, #0313c7);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.Card_Amigos {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vh;
+    background: linear-gradient(#136ab1, #51ad05);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.Card_Perfil {
+    width: 50%;
+    height: 90%;
+    border-radius: 1vh;
+    background: linear-gradient(#aa0b0b, #0313c7);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
