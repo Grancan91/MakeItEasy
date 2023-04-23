@@ -6,7 +6,7 @@ const loadNavbar = function(){
 
    //Localizar Div en el HTML
    event.dom = document.getElementsByClassName('navbar')
-   event.navbarEvent()
+   event.mainEvent()
    console.log(event.dom)
 
 }

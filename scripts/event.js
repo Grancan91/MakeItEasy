@@ -7,8 +7,8 @@ class Event {
         this.dom = HTMLCollection
     }
    
-    navbarEvent(){
-        let navbar = document.querySelector('.navbar')
+    mainEvent(){
+        let main = document.querySelector('.main')
         let event = document.querySelector('.event')
         let eventUl = document.querySelector('ul')
         let eventLi = document.querySelector('li')
@@ -25,7 +25,7 @@ class Event {
             
             
             event.appendChild(eventUl)
-            navbar.appendChild(event)
+            main.appendChild(event)
             } else {
                 event = document.createElement('div')
                 event.setAttribute('class','event')
@@ -38,7 +38,7 @@ class Event {
                 
                 
                 event.appendChild(eventUl)
-                navbar.appendChild(event)
+                main.appendChild(event)
             }
 
             
