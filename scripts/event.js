@@ -8,11 +8,42 @@ class Event {
     }
    
     navbarEvent(){
-        var navbar = document.querySelector('.navbar')
-        this.dom = document.createElement('div')
-        this.dom.setAttribute('class','event')  
-        this.dom.setAttribute('id', this.eventId)
-        navbar.appendChild(this.dom)
+        let navbar = document.querySelector('.navbar')
+        let event = document.querySelector('.event')
+        let eventUl = document.querySelector('ul')
+        let eventLi = document.querySelector('li')
+
+            if(event){
+            event = document.createElement('div')
+            event.setAttribute('class','event')
+            event.setAttribute('id', this.eventId)
+            
+            eventLi = document.createElement('li')
+            eventLi.appendChild(document.createTextNode("Lista"))
+            eventUl = document.createElement('ul')
+            eventUl.appendChild(eventLi)
+            
+            
+            event.appendChild(eventUl)
+            navbar.appendChild(event)
+            } else {
+                event = document.createElement('div')
+                event.setAttribute('class','event')
+                event.setAttribute('id', this.eventId)
+                
+                eventLi = document.createElement('li')
+                eventLi.appendChild(document.createTextNode("Dont Have Events Jet"))
+                eventUl = document.createElement('ul')
+                eventUl.appendChild(eventLi)
+                
+                
+                event.appendChild(eventUl)
+                navbar.appendChild(event)
+            }
+
+            
+       
+        
     }
     //
   
