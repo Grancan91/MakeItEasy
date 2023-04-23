@@ -1,74 +1,93 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     height: 100%;
 }
-body{
+
+body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     min-height: 100%;
 }
 
-.grid-container > * {
-border-radius: 4px;
+.grid-container>* {
+    border-radius: 4px;
+    text-align: center;
 }
 
-.header{
+.header {
     grid-area: header;
-    background-color: rgb(171, 171, 226);
-}
-.navbar{
-    grid-area: navbar;
-    background-color: rgb(171, 171, 226);
-}
-.main{
-    grid-area: main;
-    background-color: rgb(171, 171, 226);
-}
-.sidebar{
-    grid-area: sidebar;
-    background-color: rgb(171, 171, 226);
-}
-.footer{
-    grid-area: footer;
-    background-color: rgb(171, 171, 226);
+    background-color: rgb(245, 245, 238);
 }
 
-.grid-container{
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(245, 245, 238);
+}
+.navbar > * {
+    width: 30%;
+    height: 100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aquamarine;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(245, 245, 238);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(245, 245, 238);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(245, 245, 238);
+}
+
+.grid-container {
     display: grid;
     gap: 10px;
-    grid-template-areas: 
-    "header"
-    "navbar"
-    "main"
-    "sidebar"
-    "footer";
+    grid-template-rows: 100px 100px auto 300px 200px;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "footer";
 }
 
-@media (min-width: 600px){
-    .grid-container{
-        background-color: aquamarine;
-        grid-template: 
-        "header header" 100px
-        "navbar navbar" 50px
-        "sidebar main" auto
-        "footer footer"100px;
-
-        
+@media (min-width: 600px) {
+    .grid-container {
+        background-color: rgb(230, 248, 242);
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 80px auto 100px;
+        grid-template-areas:
+            "header header"
+            "navbar navbar"
+            "sidebar main"
+            "footer footer";
     }
 }
 
-@media (min-width: 900px){
-    .grid-container{
-        background-color: aquamarine;
-        grid-template-areas: 
-        "header header header"
-        "navbar main main"
-        "navbar main main"
-        "footer footer";
+@media (min-width: 900px) {
+    .grid-container {
+        background-color: rgb(224, 240, 235);
+        grid-template-columns: 100px auto 200px;
+        grid-template-rows: 300px auto 100px;
+        grid-template-areas:
+            "header header header"
+            "navbar main sidebar"
+            "footer footer footer";
     }
 }
 
