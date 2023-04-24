@@ -24,80 +24,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blanchedalmond;
-}
-
-.navbar {
-    grid-area: navbar;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(245, 245, 238);
-}
-
-.navbar>* {
-    width: 30%;
-    height: 100px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: aquamarine;
 }
 
 .main {
     grid-area: main;
-    background-image: url(../img/card2.jpg);
-    background-size: cover;
+    background-color: blanchedalmond;
+    font-size: 1.5rem;
+
 }
 
-.sidebar {
-    grid-area: sidebar;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(245, 245, 238);
-}
-
-.sidebar > * {
-    width: 50%;
-    height: 150px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: aquamarine;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: rgb(245, 245, 238);
+.main form > *{
+    margin: 10px;
+    width: 80%;
+    
 }
 
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template-columns: 45vh;
-    grid-template-rows: 100px 300px 150px 200px;
+    grid-template-columns: 50vh;
+    grid-template-rows: 100px auto;
     grid-template-areas:
         "header"
-        "main"
-        "sidebar"
-        "footer";
+        "main";
 }
-
-.new-event {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.edit-event {
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
 
 @media (min-width: 600px) {
     .grid-container {
